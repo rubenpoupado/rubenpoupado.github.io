@@ -67,12 +67,11 @@
 
 		  // Set flex-direction to column for a vertical layout
 		  container.style.flexDirection = 'column';
-		  container.style.margin-bottom = '10px';
 	  
           // Loop through the data and create a card for each game
           data.forEach(game => {
             const cardHtml = `
-              <div class="card bg-black" style="width: 38rem;">
+              <div class="card bg-black" style="width: 38rem; margin-bottom: 10px;">
                 <div class="card-body text-white">
                   <h5 class="card-title">${game.title}</h5>
                   <h6 class="card-subtitle mb-2 text-white-50">${game.about}</h6>

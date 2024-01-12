@@ -8,16 +8,17 @@
 	<style>
 		::-webkit-scrollbar
 		{
-		  width: 12px;  /* for vertical scrollbars */
-		  height: 12px; /* for horizontal scrollbars */
+		  width: 8px;  /* for vertical scrollbars */
 		}
 		::-webkit-scrollbar-track
 		{
 		  background: rgba(128, 128, 128, 0.1);
+		  border-radius: 8px;
 		}
 		::-webkit-scrollbar-thumb
 		{
 		  background: rgba(255, 255, 255, 0.5);
+		  border-radius: 8px;
 		}
         .dropdown-item:hover {
             background-color: #17191a;
@@ -33,6 +34,7 @@
 		#menu li:hover {
 			background-color: #17191a;
 			font-weight: bold;
+			cursor: pointer;
 		}
 		nav {
 			padding: 10px;
@@ -49,18 +51,20 @@
 			background-image: linear-gradient(black, rgba(255, 255, 255, 0.033));
 		}
 		#poemList {
-            width: 50%;
+            width: 25%;
 			height: 800px;
 			max-height: 800px;
         }
 		#menu {
-			padding: 20px;
-			height: 600px;
-			max-height: 600px;
+			margin: 20px 0 20px;
+			height: 760px;
+			max-height: 760px;
 		}
         #poemContent {
             flex: 1;
             padding: 20px;
+			height: 800px;
+			max-height: 800px;
         }
 		#main {
 			display: flex;
@@ -68,15 +72,22 @@
             margin: 20px 10px 10% 10px;
 		}
 		#selectedPoemContent {
-			height: 800px;
-			max-height: 800px;
+			position: relative;
+			min-width: calc(100% - 8px); /* Set min-width considering the scrollbar width */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#selectedPoemContent h3 {
+		  margin-top: 0; /* Remove default top margin for h3 */
+		  margin-bottom: 10px; /* Add some bottom margin for spacing */
 		}
     </style>
   </head>
   <body class="bg-black h-100">
     <nav class="navbar navbar-expand-lg bg-black">
 	  <div class="container-fluid">
-		<a class="navbar-brand text-white" href="#">rubenpoupado</a>
+		<a class="navbar-brand text-white" href="index.html">rubenpoupado</a>
 		<button class="navbar-toggler bg-black" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -90,7 +101,7 @@
 				Writing
 			  </a>
 			  <ul class="dropdown-menu bg-black border border-white">
-				<li><a class="dropdown-item active text-white" href="poetry.html">Poetry</a></li>
+				<li><a class="dropdown-item active text-white" href="#">Poetry</a></li>
 				<li><a class="dropdown-item text-secondary disabled" aria-disabled="true">Stories</a></li>
 			  </ul>
 			</li>
@@ -114,13 +125,13 @@
 	<div id="main">
 		<div id="poemList" class="bg-transparent text-white border border-white">
 			<ul id="menu" class="text-center overflow-auto">
-				<!-- Poem names will be dynamically added here -->
+				
 			</ul>
 		</div>
 
 		<div id="poemContent" class="bg-transparent text-white border border-white d-flex justify-content-center">
 			<div id="selectedPoemContent" class="overflow-auto">
-				<!-- Poem content will be dynamically added here -->
+				
 			</div>
 		</div>
 	</div>
