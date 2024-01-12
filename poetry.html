@@ -9,6 +9,13 @@
         .dropdown-item:hover {
             background-color: #17191a;
         }
+		.menu li {
+			list-style-type: none;
+		}
+		.menu li:hover {
+			background-color: #17191a;
+			font-weight: bold;
+		}
 		nav {
 			padding: 10px;
 			position: fixed;
@@ -80,13 +87,13 @@
 	
 	<div id="main">
 		<div id="poemList" class="bg-transparent text-white border border-white">
-			<ul id="menu">
+			<ul id="menu" class="text-center">
 				<!-- Poem names will be dynamically added here -->
 			</ul>
 		</div>
 
 		<div id="poemContent" class="bg-transparent text-white border border-white">
-			<div id="selectedPoemContent">
+			<div id="selectedPoemContent" class="text-center">
 				<!-- Poem content will be dynamically added here -->
 			</div>
 		</div>
