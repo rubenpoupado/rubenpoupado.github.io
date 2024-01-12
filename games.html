@@ -65,6 +65,10 @@
           // Container to hold the game cards
           const container = document.getElementById('gameCardsContainer');
 
+		  // Set flex-direction to column for a vertical layout
+		  container.style.flexDirection = 'column';
+		  container.style.margin-bottom = '10px';
+	  
           // Loop through the data and create a card for each game
           data.forEach(game => {
             const cardHtml = `
