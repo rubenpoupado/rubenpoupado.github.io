@@ -1,8 +1,14 @@
 [
 	{
 		"title": "Ragecat Lite",
-		"about": "The game is a simple platformer with deadly hazards, the player controls a cat and must bring it alive to the end of the level using its athletic paws to parkour around terrain while avoiding danger. This was built as our first godot game to learn our first principles of development.",
+		"about": "The game is a simple platformer with deadly hazards, the player controls a cat and must bring it alive to the end of the level using its athletic paws to parkour around terrain while avoiding danger.<br>This was built as our first godot game to learn our first principles of development.",
 		"iframeSrc": "https://itch.io/embed/2376909?border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=ffffff",
 		"githubLink": "https://github.com/rubenpoupado/Catjam-Godot-Wild-Jam-63-"
+	},
+	{
+		"title": "Unexplosive Firework",
+		"about": "It's New Years and It's time to celebrate, only we're not basing our celebration on the cheers of humans, we're celebrating the soon-arrival of Rocket Jr. who truly believes in reaching the Moon.<br><br>This game was originally made for the New Years Minijam, but sadly I was late to it and couldn't finish it in time, today I decided to open it back up and finish it minimally for the sake of New Years, the game is not interesting nor is it beautiful or accurate with its upgrade numeracy.",
+		"iframeSrc": "https://itch.io/embed/543345?border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=ffffff",
+		"githubLink": "https://github.com/rubenpoupado/"
 	}
 ]
