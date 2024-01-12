@@ -59,36 +59,43 @@
 	
 	<script>
       // Fetch data from the JSON file
-      fetch('games.json')
-        .then(response => response.json())
-        .then(data => {
-          // Container to hold the game cards
-          const container = document.getElementById('gameCardsContainer');
+		fetch('games.json')
+		  .then(response => response.json())
+		  .then(data => {
+			// Container to hold the game cards
+			const container = document.getElementById('gameCardsContainer');
 
-		  // Set flex-direction to column for a vertical layout
-		  container.style.flexDirection = 'column';
-	  
-          // Loop through the data and create a card for each game
-          data.forEach(game => {
-            const cardHtml = `
-              <div class="card bg-black" style="width: 38rem; margin-bottom: 10px;">
-                <div class="card-body text-white">
-                  <h5 class="card-title">${game.title}</h5>
-                  <h6 class="card-subtitle mb-2 text-white-50">${game.about}</h6>
-                  <p class="card-text">
-                    <iframe frameborder="0" src="${game.iframeSrc}" width="550" height="165"></iframe>
-                  </p>
-                  <a href="${game.githubLink}" class="text-secondary mx-auto mt-2 mb-5 card-link text-end">Github</a>
-                </div>
-              </div>
-			  <br>
-            `;
+			// Set flex-direction to column for a vertical layout
+			container.style.flexDirection = 'column';
 
-            // Append the card HTML to the container
-            container.innerHTML += cardHtml;
-          });
-        })
-        .catch(error => console.error('Error fetching data:', error));
+			// Loop through the data and create a card for each game
+			data.forEach(game => {
+			  // Create a new div for the card
+			  const cardDiv = document.createElement('div');
+			  cardDiv.className = 'card bg-black';
+			  cardDiv.style.width = '38rem';
+			  cardDiv.style.marginBottom = '10px';
+
+			  // Card body
+			  const cardBodyHtml = `
+				<div class="card-body text-white">
+				  <h5 class="card-title">${game.title}</h5>
+				  <h6 class="card-subtitle mb-2 text-white-50">${game.about}</h6>
+				  <p class="card-text">
+					<iframe frameborder="0" src="${game.iframeSrc}" width="550" height="165"></iframe>
+				  </p>
+				  <a href="${game.githubLink}" class="text-secondary mx-auto mt-2 mb-5 card-link text-end">Github</a>
+				</div>
+			  `;
+
+			  // Set the HTML content for the card
+			  cardDiv.innerHTML = cardBodyHtml;
+
+			  // Append the card to the container
+			  container.appendChild(cardDiv);
+			});
+		  })
+		  .catch(error => console.error('Error fetching data:', error));
     </script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
