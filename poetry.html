@@ -9,10 +9,10 @@
         .dropdown-item:hover {
             background-color: #17191a;
         }
-		.menu li {
+		#menu li {
 			list-style-type: none;
 		}
-		.menu li:hover {
+		#menu li:hover {
 			background-color: #17191a;
 			font-weight: bold;
 		}
@@ -44,6 +44,9 @@
 			display: flex;
             flex: 1;
             margin: 20px 10px 20px 10px;
+		}
+		#selectedPoemContent {
+			margin: auto 20%;
 		}
     </style>
   </head>
@@ -92,8 +95,8 @@
 			</ul>
 		</div>
 
-		<div id="poemContent" class="bg-transparent text-white border border-white">
-			<div id="selectedPoemContent" class="text-center">
+		<div id="poemContent" class="bg-transparent text-white border border-white justify-content-center">
+			<div id="selectedPoemContent">
 				<!-- Poem content will be dynamically added here -->
 			</div>
 		</div>
