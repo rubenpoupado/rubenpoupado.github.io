@@ -1,0 +1,10 @@
+{
+	"games": [
+		{
+			"title": "Ragecat Lite",
+			"about": "The game is a simple platformer with deadly hazards, the player controls a cat and must bring it alive to the end of the level using its athletic paws to parkour around terrain while avoiding danger. This was built as our first godot game to learn our first principles of development.",
+			"iframeSrc": "https://itch.io/embed/2376909?border_width=0&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=ffffff",
+			"githubLink": "https://github.com/rubenpoupado/Catjam-Godot-Wild-Jam-63-"
+		}
+	]
+}

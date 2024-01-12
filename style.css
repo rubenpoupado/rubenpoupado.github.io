@@ -1,0 +1,147 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+:root {
+    --color-background-body: black;
+}
+
+html {
+  height: 100%;  
+}
+
+body {
+  background-color: black;
+  min-height: 100%;
+  color: white;
+  font-family: 'Consolas', 'Courier';
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.wrapper {
+  margin: auto;  
+  width:20%;
+}
+
+p.par {
+  text-align: justify;
+  margin-top: 2em;
+}
+
+p.spacer {
+  text-align: center;
+  padding-top: 10em;
+}
+
+p.figure {
+  text-align: center;
+  font-size: 12px;
+}
+
+.poemBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+   margin: auto 20%;
+}
+
+p.poem {
+  margin-top:5em;
+  font-size: 18px;
+  text-align: left;
+}
+
+p.poemName {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom:5em;
+}
+
+p.short {
+  text-align: justify;
+  font-size: 18px;
+}
+
+p.shortName {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 7.5em;
+  margin-bottom: 2em;
+}
+
+p.title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5em;
+  margin-bottom: 2.5em;
+}
+
+p.story {
+  text-align: justify;
+  font-size: 24px;
+}
+
+p.storyHR {
+  text-align: center;
+  font-size: 32px;
+  color:red;
+}
+
+img.photo {
+  display: block;
+  text-align: center;
+  width: 25%;
+  height: 25%;
+  max-width: 50%;
+  max-height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 { 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul {
+  text-align: center;  
+}
+
+.nav {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul > li {
+  display: inline-block;
+}
+
+.nav ul a{
+  color: grey;
+  text-decoration: none;
+  display: inline-flex;
+  list-style: none;
+  margin: 0 20px;
+}
+
+.nav li:hover {
+  background-color: #1E1E1E;
+  color: grey;
+}
+
+.nav ul a.active {
+  color: white;
+}
