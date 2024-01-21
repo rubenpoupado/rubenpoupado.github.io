@@ -6,12 +6,28 @@
     <title>Ruben Poupado</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<style>
+		::-webkit-scrollbar {
+			width: 8px;  /* for vertical scrollbars */
+		}
+		::-webkit-scrollbar-track {
+			background: rgba(128, 128, 128, 0.1);
+			border-radius: 8px;
+		}
+		::-webkit-scrollbar-thumb {
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 8px;
+		}
         .dropdown-item:hover {
             background-color: #17191a;
         }
 		body {
 			overflow: hidden;
 			background-image: linear-gradient(black, rgba(255, 255, 255, 0.033));
+		}
+		#main {
+			height: 90%;
+			max-height: 90%;
+			margin: 0 10%;
 		}
     </style>
   </head>
@@ -53,28 +69,58 @@
 	  </div>
 	</nav>
 	
-	<div class="p-3 my-auto d-flex justify-content-center">
+	<div class="p-3 d-flex justify-content-center overflow-auto" id="main">
 		<div class="grid w-75">
-			<div class="row h-50">
+			<div class="row">
 				<h4 class="text-white-50 my-0 display-4 text-start text-uppercase">Who am I?</h4>
-				<h5 class="text-secondary mx-auto mt-2 mb-5 ">
-				I'm not quite sure yet but I'm a 23yo male portuguese student in a CS licenciate in Tomar, I am 
-				at the very finish line with only the final project to complete.<br>
-				<br>
-				I like to play videogames with my friends and am invested in the gaming culture, I also enjoy
-				writing poetry on hurtful and darker topics such as heartbreaks, depression and alcoholism.
-				</h5>
-			</div>
-			<div class="row h-50">
-				<h3 class="text-white-50 my-0 display-4 text-start text-uppercase">Contact & Links</h3>
-				<h5 class="text-secondary mx-auto mt-2 mb-5 ">
-				Discord: poupado<br>
-				Gmail: rubendavidpoupado@gmail.com<br>
-				<a class="text-secondary mx-auto mt-2 mb-5" href="https://github.com/rubenpoupado">Github</a>
-				&
-				<a class="text-secondary mx-auto mt-2 mb-5" href="https://www.linkedin.com/in/rubenpoupado/">Linkedin</a>
-				</h5>
-			</div>
+					<p class="text-secondary mx-auto mt-2 mb-5">
+					I'm not quite sure yet but I'm a 23yo male portuguese, finalist in a Computer Science
+					licenciate in Tomar where I currently have my final project left to complete.<br>
+					<br>
+					I like to play videogames with my friends and am invested in the gaming culture, I also enjoy
+					writing poetry on hurtful and darker topics such as heartbreaks, depression, alcoholism and suicide.
+					</p>
+					
+					<h4 class="text-white-50 my-0 display-4 text-start text-uppercase">Skills</h4>
+					<h5 class="text-secondary mx-auto mt-2">Programming Languages & Frameworks</h5>
+					<ul class="text-secondary mb-5 mx-4">
+						<li>C, C#, Python, Java, Kotlin</li>
+						<li>HTML, CSS, JavaScript, PHP</li>
+						<li>Bash, VBA, Lua</li>
+						<li>React, React Native, Bootstrap, ASP.NET MVC</li>
+					</ul>
+					<h5 class="text-secondary mx-auto mt-2">Database</h5>
+					<ul class="text-secondary mb-5 mx-4">
+						<li>MySQL, SQLServer</li>
+					</ul>
+					<h5 class="text-secondary mx-auto mt-2">Software</h5>
+					<ul class="text-secondary mb-5 mx-4">
+						<li>Android Studio & MIT App Inventor</li>
+						<li>PowerApps & Business Intelligence Dashboards</li>
+						<li>Wireshark, Nmap</li>
+						<li>Unity, Godot & Aseprite</li>
+					</ul>
+					<h5 class="text-secondary mx-auto mt-2">Brainware</h5>
+					<ul class="text-secondary mb-5 mx-4">
+						<li>Software Engineering</li>
+						<li>Database Management</li>
+						<li>Cybersecurity</li>
+						<li>Basic Game Development</li>
+					</ul>
+			
+				<h4 class="text-white-50 my-0 display-4 text-start text-uppercase">Education</h4>
+					<h5 class="text-secondary mx-auto mt-2">Computer Science, Licenciate, at Instituto Politécnico de Tomar (2020-2024)</h5>
+					<h5 class="text-secondary mx-auto mt-2">Technology and Programming of Information Systems, TeSP, at Instituto Politécnico de Tomar (2018-2020)</h5>
+					<h5 class="text-secondary mx-auto mt-2 mb-5">Programming of Systems, High School, at Escola Secundário do Entroncamento (2015-2018)</h5>
+				
+				<h4 class="text-white-50 my-0 display-4 text-start text-uppercase">Contact & Links</h4>
+					<p class="text-secondary mx-auto mt-2 mb-5 ">
+					Discord: poupado<br>
+					Gmail: rubendavidpoupado@gmail.com<br>
+					<a class="text-secondary mx-auto mt-2 mb-5" href="https://github.com/rubenpoupado">Github</a>
+					&
+					<a class="text-secondary mx-auto mt-2 mb-5" href="https://www.linkedin.com/in/rubenpoupado/">Linkedin</a>
+					</p>
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
