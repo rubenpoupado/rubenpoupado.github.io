@@ -9,7 +9,7 @@ with a ring on my finger there was no one to steal,<br/>
 the future I held dear, the one with you here<br/>
 it was all true once more, a life of no drear—<br/>
 How I long to live in that dream,<br/>
-in my head lies such internal scream,<br/>
+in my head lies this internal scream,<br/>
 how I long to kiss your luscious lips<br/>
 and to look at your heavenly hips.<br/>
 Instead I wake to this nightmare everyday,<br/>
