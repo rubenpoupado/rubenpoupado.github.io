@@ -1,0 +1,32 @@
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+  <h4 *ngIf="selectedPoem" class="text-white position-absolute translate-middle-x text-center" style="z-index: 1; font-size: 90px;">></h4>
+  <div class="row w-100">
+
+    <div *ngIf="selectedPoem" class="col-6 p-3 d-flex justify-content-center align-items-center">
+      <div class="poem-list-container w-50">
+        <ul class="list-group">
+          <li *ngFor="let poem of poems" class="list-group-item bg-dark text-white">
+            <button (click)="selectPoem(poem)" class="btn btn-link text-white w-100 text-left" [ngClass]="{'selected-item': selectedPoem === poem}">{{ poem.title }}</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div *ngIf="!selectedPoem" class="p-3 d-flex justify-content-center align-items-center">
+        <div class="poem-list-container w-50">
+          <ul class="list-group">
+            <li *ngFor="let poem of poems" class="list-group-item bg-dark text-white">
+              <button (click)="selectPoem(poem)" class="btn btn-link text-white w-100 text-left" [ngClass]="{'selected-item': selectedPoem === poem}">{{ poem.title }}</button>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="col-6 p-3 d-flex justify-content-center align-items-center">
+      <div *ngIf="selectedPoem" class="poem-box" #poemBox>
+        <div class="poem-content" [innerHtml]="selectedPoem.content"></div>
+      </div>
+    </div>
+    
+  </div>
+</div>

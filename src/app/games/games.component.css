@@ -1,0 +1,87 @@
+.games-page {
+    height: calc(100vh - 80px); /* Account for navbar height */
+    margin-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    overflow: hidden;
+}
+  
+.game-list-container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.game-list {
+    max-height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.list-item {
+    text-decoration: none;
+    color: white;
+}
+
+.list-item:hover {
+    color: rgb(123, 173, 206);
+    background-color: rgb(80, 87, 90);
+}
+
+.status-filter-group button:hover {
+    color: rgb(123, 173, 206);
+    background-color: rgb(80, 87, 90);
+}
+.game-info {
+    flex: 1; /* Take up the remaining space */
+  }
+
+.game-details-container {
+  display: flex;
+  flex-direction: row; /* Align content in a row */
+  justify-content: space-between; /* Space between game details and image gallery */
+  align-items: flex-start; /* Align the items to the top */
+  padding-right: 20px;
+  
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Game Main Content */
+.game-main-content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+.main-image-container {
+    text-align: center;
+  }
+
+.main-image {
+    max-width: 100%; /* Ensure it fits within the container */
+    max-height: 400px; /* Limit the height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure it scales properly */
+  }
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    overflow-y: auto; /* Allow vertical scrolling if images overflow */
+    gap: 10px; /* Space between images */
+    max-height: 400px; /* Limit height for scroll */
+    margin-left: 20px; /* Space between game info and image gallery */
+  }
+  
+.image-gallery img {
+    max-width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional for rounded corners */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    cursor: pointer;
+}
+
+.btn-group .btn.active {
+    background-color: #444;
+    color: white;
+}

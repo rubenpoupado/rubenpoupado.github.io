@@ -1,0 +1,48 @@
+[
+	{
+		"title": "Void Thru",
+		"status": "Concept",
+		"date": "18/05/2024",
+		"tags": ["3D", "Minimalist", "First-Person", "Horror", "Gamejam", "Concept", "Godot"],
+		"about": "The game is a very short demo (mostly concept) where the player controls himself in first person and must bring requested handmade dishes to the void portal to progress. This was built as our first 3D godot game to continue learning and was submitted to the Godot Wild Jam #69 (nice). Testing Blender for 3D modeling was also part of the experience.",
+		"link": "https://poupado.itch.io/void-thru-demo",
+		"githubLink": "",
+		"imageSrc": [
+			"assets/images/games/voidthru_menu.png",
+			"assets/images/games/voidthru_tutorial.png",
+			"assets/images/games/voidthru_gameplay.png",
+			"assets/images/games/voidthru_gameplay2.png",
+			"assets/images/games/voidthru_gameplay3.png"
+		]
+	},
+	{
+		"title": "Ragecat Lite",
+		"status": "Abandoned",
+		"date": "19/11/2023",
+		"tags": ["2D", "Platformer", "Gamejam", "Godot"],
+		"about": "The game is a simple platformer with deadly hazards, the player controls a cat and must bring it alive to the end of the level using its athletic paws to parkour around terrain while avoiding danger. This was built as our first godot game to learn our first principles of development.",
+		"link": "https://poupado.itch.io/ragecat-lite",
+		"githubLink": "https://github.com/rubenpoupado/Catjam-Godot-Wild-Jam-63-",
+		"imageSrc": [
+			"assets/images/games/ragecat_menu.png",
+			"assets/images/games/ragecat_tutorial.png",
+			"assets/images/games/ragecat_tutorial2.png",
+			"assets/images/games/ragecat_gameplay.png"
+		]
+	},
+	{
+		"title": "Unexplosive Firework",
+		"status": "Finished",
+		"date": "01/01/2020",
+		"tags": ["2D", "Incremental", "Gamejam", "Unity"],
+		"about": "It's New Years and It's time to celebrate, only we're not basing our celebration on the cheers of humans, we're celebrating the soon-arrival of Rocket Jr. who truly believes in reaching the Moon. This game was originally made for the New Years Minijam, but sadly I was late to it and couldn't finish it in time, today I decided to open it back up and finish it minimally for the sake of New Years, the game is not interesting nor is it beautiful or accurate with its upgrade numeracy.",
+		"link": "https://ruben-poupado.itch.io/unexplosive-firework",
+		"githubLink": "",
+		"imageSrc": [
+			"assets/images/games/unexplosivefirework_menu.png",
+			"assets/images/games/unexplosivefirework_gameplay.png",
+			"assets/images/games/unexplosivefirework_gameplay2.png",
+			"assets/images/games/unexplosivefirework_gameplay3.png"
+		]
+	}
+]

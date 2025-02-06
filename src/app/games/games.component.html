@@ -1,0 +1,84 @@
+<div class="container-fluid games-page">
+
+    <!-- GAMES LIST if none selected -->
+    <div *ngIf="!selectedGame" class="game-list-container p-3 align-items-center justify-content-center">
+        <h3 class="text-white text-center">Games</h3>
+        
+        <!-- Status Filter -->
+        <div class="status-filter-group btn-group d-flex justify-content-center mb-2 d-flex">
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'All'" (click)="selectedStatus='All'; filterGames()">All</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Finished'" (click)="selectedStatus='Finished'; filterGames()">Finished</button>
+          <button disabled class="btn btn-outline-light" [class.active]="selectedStatus === 'On Hold'" (click)="selectedStatus='On Hold'; filterGames()">On Hold</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Abandoned'" (click)="selectedStatus='Abandoned'; filterGames()">Abandoned</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Concept'" (click)="selectedStatus='Concept'; filterGames()">Concept</button>
+        </div>
+
+        <!-- List -->
+        <ul class="list-group game-list">
+          <li *ngFor="let game of filteredGames" class="list-group-item bg-dark text-white">
+            <button (click)="selectGame(game)" class="list-item btn btn-link w-100 text-left">{{ game.title }}</button>
+          </li>
+        </ul>
+      </div>
+
+    <div class="row h-100"> 
+      <!-- GAMES LIST if game selected -->
+      <div *ngIf="selectedGame" class="col-4 game-list-container p-3">
+        <h3 class="text-white text-center">Games</h3>
+        
+        <!-- Status Filter -->
+        <div class="btn-group d-flex justify-content-center mb-2">
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'All'" (click)="selectedStatus='All'; filterGames()">All</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Finished'" (click)="selectedStatus='Finished'; filterGames()">Finished</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'On Hold'" (click)="selectedStatus='On Hold'; filterGames()">On Hold</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Abandoned'" (click)="selectedStatus='Abandoned'; filterGames()">Abandoned</button>
+          <button class="btn btn-outline-light" [class.active]="selectedStatus === 'Concept'" (click)="selectedStatus='Concept'; filterGames()">Concept</button>
+        </div>
+  
+        <!-- List -->
+        <ul class="list-group game-list">
+          <li *ngFor="let game of filteredGames" class="list-group-item bg-dark text-white">
+            <button (click)="selectGame(game)" class="btn btn-link text-white w-100 text-left">{{ game.title }}</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Panel: Game Details -->
+      <div class="col-8 game-details-container p-3" *ngIf="selectedGame">
+        <!-- Game Info Section -->
+        <div class="game-info">
+          <h3 class="text-white text-center">{{ selectedGame?.title }}</h3>
+          <p class="text-secondary text-center">{{ selectedGame?.date }}</p>
+
+        <div class="game-main-content">
+            <div class="main-image-container mb-3">
+                <img [src]="selectedImage" class="main-image" alt="Selected Game Image">
+            </div>
+            
+            <!-- Image Gallery (Right side) -->
+            <div class="image-gallery">
+                <img *ngFor="let img of selectedGame.imageSrc" [src]="img" class="game-image" (click)="updateMainImage(img)">
+            </div>
+        </div>
+
+          <p class="text-white">{{ selectedGame?.about }}</p>
+      
+          <!-- Tags -->
+          <div class="mb-2">
+            <span *ngFor="let tag of selectedGame.tags" class="badge bg-secondary me-1">{{ tag }}</span>
+          </div>
+      
+          <!-- Play on itch.io Button -->
+            <div *ngIf="selectedGame.link">
+                <a [href]="selectedGame?.link" target="_blank" class="btn btn-outline-light">Play on itch.io</a>
+            </div>
+      
+          <!-- GitHub Link -->
+          <div *ngIf="selectedGame.githubLink">
+            <a [href]="selectedGame?.githubLink" target="_blank" class="btn btn-outline-light">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>

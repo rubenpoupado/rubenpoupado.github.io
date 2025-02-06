@@ -1,0 +1,24 @@
+.center-box {
+    position: absolute;
+    width: 60vw;
+    max-width: 800px;
+    height: 70vh;
+    background: black;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px 4px rgba(0, 255, 0, 0.25);
+    cursor: grab;
+    user-select: none;
+}
+
+.fullscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.drag-header {
+    cursor: grab;
+}

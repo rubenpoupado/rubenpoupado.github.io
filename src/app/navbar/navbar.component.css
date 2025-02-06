@@ -1,0 +1,31 @@
+.dropdown-item:hover {
+    background-color: #50575a;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(123, 173, 206);
+}
+
+a:focus {
+    color: rgb(209, 240, 125);
+}
+
+a:active{
+    color: rgb(121, 201, 255);
+}
+
+.navbar-nav .nav-link, .dropdown-item{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link:hover{
+    color: rgb(123, 173, 206);
+}
+
+.navbar-nav .nav-link:active {
+    color: rgb(108, 117, 125)
+}
